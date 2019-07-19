@@ -1,43 +1,20 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
-import PeopleCard from './PeopleCard';
+import React from 'react';
+import styled from 'styled-components'
 
+const StyledDiv = styled.div`
+border: 5px solid green;
+`;
 
+function People(props){
+    console.log('props', props);
 
-function People(){
-    const [peopleData, setPeopleData] = useState({});
-   
-    useEffect(()=>{
-       
-
-
-
-        axios
-        .get('https://henry-mock-swapi.herokuapp.com/api')
-        .then(res => {setPeopleData(res.data);
-            const data = res.data; 
-        })
-    
-        .catch(err => console.log(err));
-
-    },[])
-    console.log(peopleData)
-    
-    if (!peopleData){
-      return <h1>Loading......</h1>
-    }else {
-    const People = props =>{
-        return(
-            
-            <div>
-               
-                {People.map(people => <PeopleCard people={name}  key={index}  />)
-                }
-
-            </div>
-            
-            );
-         
-    }}
-    
-    export default People
+    return(
+        <StyledDiv>
+          
+            <p> name: {props.person.name}</p>
+            <p> species: {props.person.species}</p>
+            <p>films: {props.name.films}</p>
+        </StyledDiv>
+    )
+}
+export default People;
