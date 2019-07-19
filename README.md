@@ -25,14 +25,22 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React output HTML using a virtual DOM than using the regular DOM, its a library and it solves the problem by making a smooth experience with our users. using components to build page
 
 - [ ] What does it mean to _think_ in react?
+exactly how you want the page to look so like the components make up the page you have to figure out how u want it to display like making boilerplate
 
-- [ ] Describe state.
+- [ ] Describe state. state is the data that our app need to use to display the info for the app
+can change
 
-- [ ] Describe props.
+- [ ] Describe props. 
+properties that you can pass data around easy
+
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+anything that affects something outside the scope of the function being executed.  got to make sure you include empty brackets[] when using  so you wont include an infinite loop
+
 
 ## Project Set Up
 
