@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import People from './components/People';
 
-const App = () => {
+function App() {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
 
